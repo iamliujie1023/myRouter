@@ -25,7 +25,7 @@ public class MyRouter {
 
     public static final void open(Context context, String target) {
         if (!mappingList.containsKey(target)) {
-            Toast.makeText(context, "target 不存在", Toast.LENGTH_LONG);
+            Toast.makeText(context, "target 不存在", Toast.LENGTH_LONG).show();
             return;
         }
         Class<? extends Activity> activity = mappingList.get(target);
