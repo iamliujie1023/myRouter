@@ -10,4 +10,7 @@ public class Const {
 
     public static final String ACT_B = "liuj/demo/ActB";
 
+    public static final String ACT_X = "liuj/demo/ActX";
+
+
 }

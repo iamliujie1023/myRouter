@@ -11,7 +11,7 @@ import com.example.liuj.router.mapping.RouterMapping;
 
 public class MainActivity extends BaseAct implements View.OnClickListener {
 
-    private Button mBtn1, mBtn2;
+    private Button mBtn1, mBtn2, mBtn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +38,12 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
     private void initView() {
         mBtn1 = findViewById(R.id.btn_1);
         mBtn2 = findViewById(R.id.btn_2);
+        mBtn3 = findViewById(R.id.btn_3);
+
 
         mBtn1.setOnClickListener(this);
         mBtn2.setOnClickListener(this);
+        mBtn3.setOnClickListener(this);
     }
 
 
@@ -50,6 +53,8 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
             MyRouter.open(this, Const.ACT_A);
         } else if (v == mBtn2) {
             MyRouter.open(this, Const.ACT_B);
+        } else if (v == mBtn3) {
+            MyRouter.open(this, Const.ACT_X);
         }
     }
 
